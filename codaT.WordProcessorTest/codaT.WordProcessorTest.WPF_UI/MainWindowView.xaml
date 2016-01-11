@@ -45,7 +45,12 @@
             ItemsSource="{Binding Path=Model.Breakdown }"
             ScrollViewer.CanContentScroll="True"
             ScrollViewer.VerticalScrollBarVisibility="Auto"
-            ScrollViewer.HorizontalScrollBarVisibility="Auto">
+            ScrollViewer.HorizontalScrollBarVisibility="Auto"
+            AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Word" Binding="{Binding Key}" />
+                <DataGridTextColumn Header="Count" Binding="{Binding Value}" />
+            </DataGrid.Columns>
         </DataGrid>
     </Grid>
 </Window>

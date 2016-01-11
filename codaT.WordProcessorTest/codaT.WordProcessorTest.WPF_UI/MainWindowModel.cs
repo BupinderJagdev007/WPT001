@@ -37,7 +37,7 @@ namespace codaT.WordProcessorTest
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        internal void ProcessText()
+        public void ProcessText()
         {
             Dictionary<string, int> sorted = new Dictionary<string, int>();
 

@@ -27,7 +27,13 @@ namespace codaT.WordProcessorTest
         public MainWindowModel Model
         {
             get { return _model; }
-            set { }
+            private set 
+            { 
+                if (value == _model)
+                    return;
+                _model = value;
+                PropertyChanged.Raise(() => Model);
+            }
         }
 
         private ICommand _processTextCommand;
