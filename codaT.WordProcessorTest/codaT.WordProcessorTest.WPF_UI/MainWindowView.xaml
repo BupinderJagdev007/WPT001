@@ -1,0 +1,51 @@
+﻿<Window x:Class="codaT.WordProcessorTest.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Word Processor Test" Height="250" Width="225">
+    <Window.Resources>
+        
+        <Style  TargetType="TextBlock">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style  TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style  TargetType="DataGrid">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style  TargetType="TextBox">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" >Enter some text to process</TextBlock>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox 
+                Grid.Column="0" 
+                Text="{Binding Path=Model.TextToSplit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">                
+            </TextBox>
+            <Button 
+                Grid.Column="1" 
+                Command="{Binding Path=ProcessTextCommand}"
+                Content="Analyise">                
+            </Button>
+        </Grid>
+        <DataGrid
+            Grid.Row="2"
+            ItemsSource="{Binding Path=Model.Breakdown }"
+            ScrollViewer.CanContentScroll="True"
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            ScrollViewer.HorizontalScrollBarVisibility="Auto">
+        </DataGrid>
+    </Grid>
+</Window>

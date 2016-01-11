@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codaT.WordProcessorTest.Lib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codaT.WordProcessorTest.UnitTests", "codaT.WordProcessorTest.UnitTests\codaT.WordProcessorTest.UnitTests.csproj", "{942CCC51-B7DE-48ED-A891-BA9BC09BE723}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codaT.WordProcessorTest.WPF_UI", "codaT.WordProcessorTest.WPF_UI\codaT.WordProcessorTest.WPF_UI.csproj", "{901DDCC4-44D4-4EBC-89F9-50FE8A3043E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{942CCC51-B7DE-48ED-A891-BA9BC09BE723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{942CCC51-B7DE-48ED-A891-BA9BC09BE723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{942CCC51-B7DE-48ED-A891-BA9BC09BE723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901DDCC4-44D4-4EBC-89F9-50FE8A3043E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901DDCC4-44D4-4EBC-89F9-50FE8A3043E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901DDCC4-44D4-4EBC-89F9-50FE8A3043E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901DDCC4-44D4-4EBC-89F9-50FE8A3043E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
