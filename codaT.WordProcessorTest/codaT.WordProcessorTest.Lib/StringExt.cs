@@ -13,7 +13,7 @@ namespace codaT.WordProcessorTest
         // this is much slower
         public const string COMPLEX_ALL = ", . ! \" £ $ % ^ & * ( ) - _ + = [ ] { } : < > ? / \\ | @ ;";
 
-        public static string RemovePunctuation(this string that, string punctuationToRemove = SIMPLE_COMMA_FULLSTOP)
+        public static string RemovePunctuation(this string that, string punctuationToRemove = COMPLEX_ALL)
         {
             string[] toRemove = punctuationToRemove.Split(new char[] { ' ' });
 
