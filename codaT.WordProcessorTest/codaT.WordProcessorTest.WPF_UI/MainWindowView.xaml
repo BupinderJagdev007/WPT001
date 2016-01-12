@@ -37,7 +37,7 @@
             <Button 
                 Grid.Column="1" 
                 Command="{Binding Path=ProcessTextCommand}"
-                Content="Analyise">                
+                Content="Analyze">                
             </Button>
         </Grid>
         <DataGrid
